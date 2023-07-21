@@ -1,0 +1,23 @@
+version: '3'
+services:
+  moives:
+    images: naidukiran/moives
+    ports: 
+      - "80:80"
+    deploy:
+      replicas 3
+  
+  train:
+    images: naidukiran/train
+    ports: 
+      -"81:80"
+    deploy:
+      replicas: 3
+  
+  paytm:
+    images: naidukiran/paytm
+    ports: 
+      -"82:80"
+    deploy:
+      replicas: 3
+
