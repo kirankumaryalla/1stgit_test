@@ -1,21 +1,21 @@
 version: '3'
 services:
   moives:
-    images: naidukiran/moives
+    images: naidukiran/moives:latest
     ports: 
       - "80:80"
     deploy:
       replicas 3
   
   train:
-    images: naidukiran/train
+    images: naidukiran/train:latest
     ports: 
       -"81:80"
     deploy:
       replicas: 3
   
   paytm:
-    images: naidukiran/paytm
+    images: naidukiran/paytm:latest
     ports: 
       -"82:80"
     deploy:
